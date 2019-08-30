@@ -88,7 +88,7 @@
             repeat: -1
         });
         
-        player2 = this.physics.add.sprite(100, 450, 'megaman');
+        player2 = this.physics.add.sprite(250, 650, 'megaman');
 
         player2.setBounce(0.2);
         player2.setCollideWorldBounds(true);
@@ -124,6 +124,9 @@
 
     function update ()
     {
+        player2.setVelocityX(160);
+        player2.anims.play('right', true);
+        
         if (cursors.left.isDown)
         {
             player.setVelocityX(-160);
