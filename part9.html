@@ -94,7 +94,7 @@
         player2.setCollideWorldBounds(true);
 
         this.anims.create({
-            key: 'right',
+            key: 'mmr',
             frames: this.anims.generateFrameNumbers('megaman', { start: 0, end: 2 }),
             frameRate: 10,
             repeat: -1
@@ -125,7 +125,7 @@
     function update ()
     {
         player2.setVelocityX(160);
-        player2.anims.play('right', true);
+        player2.anims.play('mmr', true);
         
         if (cursors.left.isDown)
         {
